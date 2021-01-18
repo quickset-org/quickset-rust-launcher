@@ -1,0 +1,10 @@
+#designing format for quickset
+#the idea is to allow all development dependencies to be setup
+
+[dependencies]
+rust = { toolchain = "stable" }
+sqlite = { version = "latest" }
+
+[dependencies.cargo]
+diesel_cli = { depends-on = ["rustup", "sqlite"], features = ["no-default-features", "features sqlite"] }
+cargo-edit = {}
