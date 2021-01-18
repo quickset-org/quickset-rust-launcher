@@ -4,9 +4,11 @@
 $ quickset
 Quickset v0.0.1 found local quickset file would you like to import it? [y/N]
 
-$ quickset 
+$ quickset . 
 Quickset v0.0.1 importing .quickset.toml
-Downloading []
+Installing rust dependency: rustup ---
+Installing sqlite dependency: homebrew ---
+
 
 ```
 
