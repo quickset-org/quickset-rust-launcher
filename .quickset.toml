@@ -5,6 +5,6 @@
 rust = { toolchain = "stable" }
 sqlite = { version = "latest" }
 
-[dependencies.cargo]
-diesel_cli = { depends-on = ["rustup", "sqlite"], features = ["no-default-features", "features sqlite"] }
+[cargo]
+diesel_cli = { depends-on = ["rust", "sqlite"], features = ["no-default-features", "features sqlite"] }
 cargo-edit = {}
